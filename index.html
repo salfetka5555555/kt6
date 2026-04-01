@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>API & WebSockets Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Демонстрация API, WebSockets и SSE</h1>
+  
+  <div id="controls">
+    <button onclick="loadData('users')">Загрузить пользователей</button>
+    <button onclick="loadData('posts')">Загрузить посты</button>
+  </div>
+  
+  <div id="data-container"></div>
+  
+  <h2>Чат (WebSocket)</h2>
+  <div id="chat-box"></div>
+  <input id="message-input" placeholder="Введите сообщение">
+  <button id="send-btn">Отправить</button>
+  
+  <h2>Обновления (SSE)</h2>
+  <div id="sse-box"></div>
+  
+  <script src="/socket.io/socket.io.js"></static></script>
+  <script src="script.js"></script>
+</body>
+</html>
